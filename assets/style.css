@@ -4,6 +4,12 @@
 *{
     scroll-behavior: smooth;
 }
+:root{
+    --var-color-principal:#4FC1E0;
+    --var-color-secundary:#41a7c4;
+    --var-color-terciary:#225361;
+    --var-color-quartary:#1D5261;
+}
 
 body{
     font-family: 'Roboto',sans-serif;
@@ -16,13 +22,13 @@ body{
     padding: 70px 0;
 }
 p,li{
-    color: #444; 
+    color:var(--var-color-quartary); 
     font-size: 14px;
 }
 
 /* Barra de navegação */
 header,.navbar{
-    background-color: #353D41;
+    background-color: var(--var-color-terciary);
 }
 #nav-container{
     padding-top: 0;
@@ -71,7 +77,7 @@ header,.navbar{
     color: #fff;
 }
 .main-btn{
-    background-color: #65DAF9;
+    background-color: var(--var-color-principal);
     color: #fff;
     text-transform: uppercase;
     width: 200px;
@@ -85,10 +91,10 @@ header,.navbar{
     text-decoration: none;
     color: #fff;
     background-color: transparent;
-    border-color: #65DAF9;
+    border-color: var(--var-color-principal);
 }
 .carousel-indicators .active{
-    background-color: #65DAF9;
+    background-color: var(--var-color-principal);
 }
 
 /* Sobre a empresa */
@@ -96,7 +102,7 @@ header,.navbar{
     background-color: #fff;
 }
 .main-title{
-    color: #444;
+    color: var(--var-color-secondary);
     margin: 0 0 65px 0;
     font-size: 40px;
     text-align: center;
@@ -104,7 +110,7 @@ header,.navbar{
 }
 .main-title::after{
     content: "";
-    border-top: 2px solid #333;
+    border-top: 2px solid var(--var-color-quartary);
     width: 15%;
     position: absolute;
     top: 60px;
@@ -112,7 +118,7 @@ header,.navbar{
 }
 .about-title{
     font-size: 17px;
-    color: #444;
+    color:var(--var-color-quartary);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -121,7 +127,7 @@ header,.navbar{
     padding-left: 0;
 }
 #about-list i {
-    color: #65DAF9;
+    color: var(--var-color-principal);
     margin-right: 15px;
 }
 
@@ -136,7 +142,7 @@ header,.navbar{
 .service-box i {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #444;
+    color: var(--var-color-quartary);
 }
 
 .service-box h4{
@@ -145,7 +151,7 @@ header,.navbar{
 }
 
 .service-box:hover > i, .service-box:hover > h4{
-    color: #65DAF9;
+    color: var(--var-color-principal);
 }
 /*Dados*/
 .circle-box div{
@@ -206,8 +212,8 @@ header,.navbar{
     border-color: #fff;
 }
 #apply-btn:hover{
-    border-color: #65DAF9;
-    background-color:#65DAF9 ;
+    border-color: var(--var-color-principal);
+    background-color:var(--var-color-principal) ;
 }
 
 /* Portfolio */ 
@@ -219,8 +225,8 @@ header,.navbar{
     text-align: center;
 }
 #portfolio-area .filter-btn{
-    color: #444;
-    border: 1px solid #444;
+    color: var(--var-color-terciary);
+    border: 1px solid var(--var-color-terciary);
     background-color: transparent;
     text-transform: none;
     margin: 0 15px;
@@ -233,8 +239,8 @@ header,.navbar{
 
 #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
     color: #fff;
-    background-color: #65DAF9;
-    border-color: #65DAF9;
+    background-color: var(--var-color-principal);
+    border-color: var(--var-color-principal);
 }
 
 /* news letter */
@@ -251,7 +257,7 @@ header,.navbar{
     border-radius:0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border:  1px solid #65DAF9;
+    border:  1px solid var(--var-color-principal);
     display: inline;
     box-sizing: border-box;
     width: 40%;
@@ -260,8 +266,8 @@ header,.navbar{
 #news-btn{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: 1px solid #65DAF9;
-    background-color: #65DAF9;
+    border: 1px solid var(--var-color-principal);
+    background-color: var(--var-color-principal);
     text-transform: uppercase;
     color: #fff;
     height: 40px;
@@ -272,7 +278,7 @@ header,.navbar{
 }
 #news-btn:hover{
     background-color: #fff;
-    color: #65DAF9;
+    color: var(--var-color-principal);
 }
 /* call to action */
 
@@ -281,7 +287,7 @@ padding:40px 100px ;
 }
 
 #call-area{
-    background-color: #65DAF9;
+    background-color: var(--var-color-principal);
     text-transform: uppercase;
 }
 #call-area .row{
@@ -301,7 +307,7 @@ padding:40px 100px ;
 }
 #call-area #call-btn{
     background-color: #fff;
-    color: #65DAF9;
+    color: var(--var-color-principal);
     font-weight: bold;
     font-size: 20px;
     margin-left: 30px;
@@ -316,11 +322,11 @@ padding:40px 100px ;
 .contact-box{
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #3EC1D5;
+    border-bottom: 1px solid var(--var-color-secundary);
 }
 .contact-box i {
-    color: #444;
-    border:solid 1px #444;
+    color:var(--var-color-quartary);
+    border:solid 1px var(--var-color-quartary);
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -333,7 +339,7 @@ padding:40px 100px ;
 }
 .contact-title{
     font-weight: bold;
-    color: #3EC1D5;
+    color: var;
 }
 #msg-box p{
     font: size 22px;
@@ -347,7 +353,7 @@ padding:40px 100px ;
     height: 50px;
 }
 #contact-form .main-btn:hover{
-    color: #3EC1D5;
+    color: var(--var-color-principal);
 }
 
 /*copy*/
@@ -364,11 +370,11 @@ padding:40px 100px ;
 }
 #copy-area .container a{
     font-weight: bold;
-    color: #444;
+    color:var(--var-color-secondary);
 }
 #copy-area .container a:hover{
     text-decoration: none;
-    color: #3EC1D5;
+    color: var(--var-color-principal);
 }
 /* responsivo */
 @media(max-width:768px){
